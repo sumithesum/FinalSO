@@ -106,3 +106,15 @@ void fucntion_mv(char  *source, char *destination) {
 	function_rm(source);
 }
 
+//touch 
+void function_touch(char * name)
+{
+    open(name,O_CREAT | S_IRUSR | S_IWUSR);
+}
+
+//exit
+void function_exit()
+{
+    printf("La revedere!");
+    exit(0);
+}
